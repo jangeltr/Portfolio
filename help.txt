@@ -1,0 +1,14 @@
+//Crear un proyecto en blanco
+npm create astro@latest nombreProyecto
+
+//iniciar un proyecto ya con un plantilla 
+npm create astro@2.0.2 -- --template portfolio 
+
+//Ejecutar el proyecto
+npm run dev
+
+//Agregar tailwind      //puedo traerme componentes tailwind gratis de 'https://www.hyperui.dev/' 
+npx astro add tailwind  
+
+//Agregar el prettier
+npm install --save-dev prettier@latest prettier-plugin-astro@latest
