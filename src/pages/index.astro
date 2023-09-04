@@ -4,35 +4,34 @@ import Header from '../components/Header.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="">
-		<div class="min-h-screen">
-			<Header title='Jose Angel Torres Rangel' />
-			<div class="w-full flex justify-center h-5/6">
-				<div class=" lg:max-w-5xl flex items-center justify-center">
-					<div class=" h-5/6 w-1/3">
-						<img src="angel.png" alt="Mi Foto" class=" h-full">
+	<Header title='Jose Angel Torres Rangel' />
+	<div class="w-full flex justify-center lg:h-screen ">
+		<div class=" lg:max-w-5xl lg:flex items-start justify-center">
+			<div class=" w-full flex justify-center lg:hidden mt-16 mb-10">
+				<img src="cara.png" alt="Mi Foto" class=" rounded-full drop-shadow-lg">
+			</div>
+			<div class=" hidden lg:flex justify-end h-5/6 w-1/3 ">
+				<img src="angel.png" alt="Mi Foto" class=" h-full">
+			</div>
+			<div class=" w-full flex items-center justify-center lg:w-2/3 lg:h-5/6">
+				<div class=" flex-col w-2/3">
+					<div class=" flex items-center justify-center mb-5">
+						<p>
+							<span class="italic text-xl">Hola!</span>
+						</p>
 					</div>
-					<div class="flex items-center w-1/3 h-5/6">
-						<div class=" flex-col ">
-							<div class=" flex items-center justify-center mb-5">
-								<p>
-									<span class=" ml-10 italic text-xl">Hola!</span>
-								</p>
-							</div>
-							<div class=" flex items-center justify-center">
-								<p class=" text-justify leading-relaxed">
-									<span class=" ml-10"> Soy</span> <span class=" font-bold"> Angel Torres</span>, y me enorgullece ser parte del equipo docente del <span class=" italic font-bold">Tecnológico de Tlajomulco</span> 
-									desde el año 2000. Durante más de dos décadas, he tenido el privilegio de impartir materias relacionadas con bases de datos y programación en esta prestigiosa institución. 
-									A lo largo de mi carrera, he tenido la oportunidad de compartir mi pasión por la tecnología y la informática con numerosos estudiantes, 
-									brindándoles las herramientas y conocimientos necesarios para enfrentar los desafíos del mundo digital. 
-									Mi compromiso con la educación y el constante aprendizaje me ha permitido mantenerme actualizado en un campo en constante evolución, 
-									y espero seguir contribuyendo al crecimiento académico y profesional de los futuros ingenieros y profesionales de la tecnología en el Tecnológico de Tlajomulco.
-								</p>
-							</div>
-						</div>
+					<div class=" flex items-center justify-center">
+						<p class=" text-justify leading-loose">
+							<span class=" ml-10"> Soy</span> <span class=" font-bold"> Angel Torres</span>, y me enorgullece ser parte del equipo docente del <span class=" italic font-bold">Tecnológico de Tlajomulco</span> 
+							desde el año 2000. Durante más de dos décadas, he tenido el privilegio de impartir materias relacionadas con bases de datos y programación en esta prestigiosa institución. 
+							A lo largo de mi carrera, he tenido la oportunidad de compartir mi pasión por la tecnología y la informática con numerosos estudiantes, 
+							brindándoles las herramientas y conocimientos necesarios para enfrentar los desafíos del mundo digital. 
+							Mi compromiso con la educación y el constante aprendizaje me ha permitido mantenerme actualizado en un campo en constante evolución, 
+							y espero seguir contribuyendo al crecimiento académico y profesional de los futuros ingenieros y profesionales de la tecnología en el Tecnológico de Tlajomulco.
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>
+	</div>
 </Layout>

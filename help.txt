@@ -12,3 +12,6 @@ npx astro add tailwind
 
 //Agregar el prettier
 npm install --save-dev prettier@latest prettier-plugin-astro@latest
+
+//Para usar elementos de una form
+npm install -D @tailwindcss/forms
