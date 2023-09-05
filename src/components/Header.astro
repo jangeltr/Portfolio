@@ -16,7 +16,8 @@ const { title } = Astro.props;
             <div class=" flex">
                 <a href="#" class="text-gray-700 group flex items-center px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"
                     onclick="{
-                        document.getElementById('body').classList.toggle('dark');
+                        document.body.classList.toggle('dark');
+                        document.body.classList.toggle('bg-gray-700');
                     }"
                 >
                     <svg class="mr-3 h-4 w-4 text-gray-400 group-hover:text-gray-500 dark:hidden" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"  width="20" height="20">
@@ -42,7 +43,7 @@ const { title } = Astro.props;
                 role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="Menu">
                 <div class="py-1" role="none">
                     <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                    <a href="#" class="text-gray-700 group flex items-center px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">
+                    <a href="http://www.tlajomulco.tecnm.mx/jangeltr/" class="text-gray-700 group flex items-center px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">
                         <svg class="mr-3 h-4 w-4 text-gray-400 group-hover:text-gray-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"  width="20" height="20" >
                             <path d="M13.768,1.147a2.5,2.5,0,0,0-3.536,0L0,11.38V21a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.38ZM21,21H16V17.818A3.818,3.818,0,0,0,12.182,14h-.364A3.818,3.818,0,0,0,8,17.818V21H3V12.622l9-9,9,9Z"/>
                         </svg>
