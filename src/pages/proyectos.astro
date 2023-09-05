@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Angel Torres">
+	<div  class="dark:bg-gray-700">
+	<Header title='Jose Angel Torres Rangel' />
+	<div class="w-full flex justify-center dark:bg-gray-700 dark:text-white mt-5 mb-5">
+		<div class=" w-full md:max-w-5xl md:flex items-center justify-center">
+			<div class=" w-full flex justify-center md:hidden mt-16 mb-10">
+				<img src="cara.png" alt="Mi Foto" class=" rounded-full drop-shadow-lg">
+			</div>
+			<div class=" hidden md:flex justify-end w-1/3">
+				<img src="angel.png" alt="Mi Foto" class=" h-128">
+			</div>
+			<div class=" w-full flex items-center justify-center md:w-2/3">
+				<div class=" flex-col w-2/3">
+					<div class=" flex items-center justify-center mb-5">
+						<p>
+							<span class="italic text-xl">Proyectos de Software</span>
+						</p>
+					</div>
+					<div class=" flex items-center justify-center">
+                        <ul>
+                            <a href="http://sisae.tlajomulco.tecnm.mx" target="_blank">
+                                <p class=" font-semibold">
+                                    SISAE: Proyecto de Software para el Tecnológico de Tlajomulco.
+                                </p> 
+                            </a>
+                            <p class=" text-justify mt-3">
+                                Este software fue desarrollado con el fin de facilitar al Sistema de Gestion de Calidad la administracion de algunos procesos de la institucion:
+                            </p>
+                            <ul class=" ml-5">
+                                <li>Seguimiento Acdemico de los Docentes</li>
+                                <li>Seguimiento de Tutorias</li>
+                                <li>Seguimiento de Actividades Academicas</li>
+                                <li>Seguimiento de Actividades Extraescolaes</li>
+                                <li>Seguimiento de las Residencias Profesionales</li>
+                            </ul>
+                            <p>Este software es utilizado por todos los alumnos y docentes de la institucion desde el 2018.</p>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<Footer />
+	</div>
+</Layout>
