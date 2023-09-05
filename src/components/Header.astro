@@ -6,14 +6,26 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<div class="flex items-center justify-between bg-white text-black h-20">
+<div class="flex items-center justify-between bg-white text-black h-20  dark:bg-gray-700 dark:text-white">
     <div class="ml-5">
         <h2 class="text-2xl font-bold italic">{title}</h2>
     </div>
     <!-- Profile dropdown -->
     <div class="relative">
         <div class="relative inline-block text-left mr-5">
-            <div>
+            <div class=" flex">
+                <a href="#" class="text-gray-700 group flex items-center px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"
+                    onclick="{
+                        document.getElementById('body').classList.toggle('dark');
+                    }"
+                >
+                    <svg class="mr-3 h-4 w-4 text-gray-400 group-hover:text-gray-500 dark:hidden" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"  width="20" height="20">
+                        <path d="M16.968,8.532,19.3,7.365l1.167-2.333,1.167,2.333,2.333,1.167L21.635,9.7l-1.167,2.333L19.3,9.7ZM22.5,16A1.5,1.5,0,1,0,24,17.5,1.5,1.5,0,0,0,22.5,16Zm-5-4A1.5,1.5,0,1,0,19,13.5,1.5,1.5,0,0,0,17.5,12Zm1.259,9.894,2.2-1.509-2.432-1.1C15.776,18.048,13,15.159,13,11.5c0-3.419,2.59-6.111,4.808-7.378L20.122,2.8l-2.33-1.293a12,12,0,1,0,.967,20.386ZM13.968,3.219A11.2,11.2,0,0,0,10,11.5a11.523,11.523,0,0,0,4.816,9.041A8.857,8.857,0,0,1,12,21,9,9,0,0,1,12,3,8.834,8.834,0,0,1,13.968,3.219Z"/>
+                    </svg>
+                    <svg class=" hidden mr-3 h-4 w-4 text-gray-400 group-hover:text-gray-500 dark:flex" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"  width="20" height="20">
+                        <path d="M12,17c-2.76,0-5-2.24-5-5s2.24-5,5-5,5,2.24,5,5-2.24,5-5,5Zm1-13V1c0-.55-.45-1-1-1s-1,.45-1,1v3c0,.55,.45,1,1,1s1-.45,1-1Zm0,19v-3c0-.55-.45-1-1-1s-1,.45-1,1v3c0,.55,.45,1,1,1s1-.45,1-1ZM5,12c0-.55-.45-1-1-1H1c-.55,0-1,.45-1,1s.45,1,1,1h3c.55,0,1-.45,1-1Zm19,0c0-.55-.45-1-1-1h-3c-.55,0-1,.45-1,1s.45,1,1,1h3c.55,0,1-.45,1-1ZM6.71,6.71c.39-.39,.39-1.02,0-1.41l-2-2c-.39-.39-1.02-.39-1.41,0s-.39,1.02,0,1.41l2,2c.2,.2,.45,.29,.71,.29s.51-.1,.71-.29Zm14,14c.39-.39,.39-1.02,0-1.41l-2-2c-.39-.39-1.02-.39-1.41,0s-.39,1.02,0,1.41l2,2c.2,.2,.45,.29,.71,.29s.51-.1,.71-.29Zm-16,0l2-2c.39-.39,.39-1.02,0-1.41s-1.02-.39-1.41,0l-2,2c-.39,.39-.39,1.02,0,1.41,.2,.2,.45,.29,.71,.29s.51-.1,.71-.29ZM18.71,6.71l2-2c.39-.39,.39-1.02,0-1.41s-1.02-.39-1.41,0l-2,2c-.39,.39-.39,1.02,0,1.41,.2,.2,.45,.29,.71,.29s.51-.1,.71-.29Z"/>
+                    </svg>
+                </a>
                 <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true"
                     class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                     onclick="{
