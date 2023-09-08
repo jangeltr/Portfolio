@@ -4,5 +4,8 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx()],
-  site: 'http://localhost/jangeltr/'
+  site: 'http://localhost/jangeltr/',
+  serveOptions: {
+    baseUrl: 'http://localhost/jangeltr'
+  }
 });
