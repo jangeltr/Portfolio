@@ -1,18 +1,15 @@
 --- 
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="My web Page Angel Torres">
+		<meta name="description" content="Mi pagina web personal Angel Torres">
 		<meta name="viewport" content="width=device-width" />
-		<title>{title}</title>
+		<link rel="canonical" href={canonicalURL}>
+		<title>Angel</title>
 	</head>
 	<body>
 		<slot  />
