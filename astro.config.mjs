@@ -5,7 +5,11 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   integrations: [tailwind(), mdx()],
   site: 'http://localhost/jangeltr/',
+  buildOptions: {
+    baseUrl: '/MiApp/'
+  },
   serveOptions: {
-    baseUrl: 'http://localhost/jangeltr'
+    // port: 3000,
+    baseUrl: '/MiApp/'
   }
 });
