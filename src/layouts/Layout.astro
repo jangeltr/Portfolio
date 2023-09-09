@@ -12,11 +12,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<title>Angel</title>
 	</head>
 	<body>
-		<slot  />
+		<slot name="article" />
 	</body>
 </html>
 <style is:global>
-	:root {
-		
-	}
+	
 </style>

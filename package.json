@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "start:dev": "astro dev",
+    "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^1.0.3",
+    "@astrojs/node": "^6.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "astro": "^3.0.4",
     "tailwindcss": "^3.3.3"

@@ -2,10 +2,11 @@
 npm create astro@latest nombreProyecto
 
 //iniciar un proyecto ya con un plantilla 
-npm create astro@2.0.2 -- --template portfolio 
+npm create astro@latest -- --template portfolio 
 
 //Ejecutar el proyecto
 npm run dev
+npx astro dev
 
 //Agregar tailwind      //puedo traerme componentes tailwind gratis de 'https://www.hyperui.dev/' 
 npx astro add tailwind  
@@ -20,4 +21,12 @@ npm install -D @tailwindcss/forms
 npm install @astrojs/mdx@latest
 
 //Para ejecutar en un puerto diferente
-npm run start:dev -- --port 8080
+npm run dev -- --port 8080
+npm run preview -- --port 8080
+
+//Para SSR
+npx astro add @astrojs/node
+
+/////////////////////////////Ayudas
+npx astro --help
+
