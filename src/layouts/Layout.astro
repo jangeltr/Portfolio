@@ -1,4 +1,13 @@
 --- 
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import { ViewTransitions } from "astro:transitions";
+//Podemos persistir el estado de un componente con el atributo persist a traves de las paginas
+//<Componente transition:persist class="">
+//...
+//</Componente>
+//Cambiara de pagina pero el estado se mantendra en el componente
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -10,9 +19,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<meta name="viewport" content="width=device-width" />
 		<link rel="canonical" href={canonicalURL}>
 		<title>Angel</title>
+		<ViewTransitions />
 	</head>
+	
 	<body>
-		<slot name="article" />
+		<div id="global" class=" min-h-screen ">
+			<Header />
+			<slot name="article" />
+			<Footer />
+		</div>
 	</body>
 </html>
 <style is:global>

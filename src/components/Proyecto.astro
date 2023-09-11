@@ -4,20 +4,30 @@ interface Props {
     link: string;
 	date: string;
     description: string;
+	images: string[];
 	detail: string;
 }
-const { title, link, date, description, detail } = Astro.props;
+const { title, link, date, description, images, detail } = Astro.props;
 ---
 <article class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 transition shadow-lg hover:shadow-2xl opacity-80 hover:opacity-100 hover:scale-105 m-10">
-	<div class="rounded-[10px] bg-white p-4 sm:p-6">
-		<div class=" w-full flex justify-center text-blue-600">
-			<a href={link} target="_blank">
-				<h3 class="mt-0.5 text-lg font-medium">
-					{title}
-				</h3>
-			</a>
+	<div class="rounded-[10px] bg-gray-100 p-4 sm:p-6">
+		<div class=" w-full flex justify-between text-blue-600">
+			{
+				images.map((image) => (
+					<div class="w-8">
+						<img class="w-full" src={`/${image}`} alt="image"/>
+					</div>
+				))
+			}
+			<div class="w-full flex justify-center">
+				<a href={link} target="_blank">
+					<h3 class="mt-0.5 text-lg font-medium">
+						{title}
+					</h3>
+				</a>
+			</div>
 		</div>
-		<div class="mt-4 flex justify-center">
+		<div class="mt-4 pl-10 flex justify-center">
             <p class="text-lg text-purple-600">
                 {description}
 			</p>
