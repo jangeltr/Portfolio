@@ -20,13 +20,4 @@ export default defineConfig({
   // ---
   //output: 'hybrid',
   //----------------------------------
-
-  // Esto sigue sin funcionarme
-  // buildOptions: {
-  //   baseUrl: '/MiApp/'
-  // },
-  // serveOptions: {
-  //   port: 3000,
-  //   baseUrl: '/MiApp/'
-  // },
 });
